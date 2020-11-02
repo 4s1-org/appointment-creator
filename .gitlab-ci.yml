@@ -19,7 +19,7 @@ build:
   script:
     - npm run build
 
-.test:
+test:
   stage: testing
   image: node:14-alpine
   artifacts:
