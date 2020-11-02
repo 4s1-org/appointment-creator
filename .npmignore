@@ -1,0 +1,9 @@
+/node_modules/
+/vscode.code-workspace
+/.editorconfig
+/.vscode/
+/src/
+/.gitlab-ci.yml
+/deploy.sh
+/.eslintrc.yaml
+/tsconfig.json
