@@ -30,4 +30,4 @@ test:
   before_script:
     - npm ci
   script:
-    - npm run test-cov-html
+    - npm run test:cov-html
