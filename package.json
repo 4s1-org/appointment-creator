@@ -28,7 +28,9 @@
     "test:cov-text": "nyc --reporter=text-summary npm test"
   },
   "prettier": "@hest-lab/eslint-config",
-  "dependencies": {},
+  "dependencies": {
+    "dayjs": "^1.9.4"
+  },
   "devDependencies": {
     "@hest-lab/eslint-config": "^1.1.0",
     "@types/chai": "^4.2.14",

@@ -2,7 +2,9 @@ import { ferienListe } from './ferien-liste'
 
 async function main(): Promise<void> {
   for (const ferien of ferienListe) {
-    console.log(ferien.text)
+    for (const woche of ferien.split()) {
+      console.log(woche.beginn.format(), woche.ende.format(), woche.text)
+    }
   }
 }
 
