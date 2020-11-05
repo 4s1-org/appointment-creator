@@ -1,6 +1,6 @@
-import * as dayjs from 'dayjs'
+import dayjs from 'dayjs'
 import 'dayjs/locale/de'
-import * as customParseFormat from 'dayjs/plugin/customParseFormat'
+import customParseFormat from 'dayjs/plugin/customParseFormat'
 dayjs.locale('de')
 dayjs.extend(customParseFormat)
 
