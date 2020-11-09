@@ -31,11 +31,22 @@ export class Datum {
     return Datum.format(date)
   }
 
-  public static getAdvent(year: number, adventNo: number): DatumType {
+  public static getAdvent(year: number, adventNo: 1 | 2 | 3 | 4): DatumType {
+    return Datum.getSundayBeforeChristmas(year, 4 - adventNo)
+  }
+
+  public static getTodensonntag(year: number): DatumType {
+    return Datum.getSundayBeforeChristmas(year, 4)
+  }
+
+  private static getSundayBeforeChristmas(
+    year: number,
+    sundayNo: number,
+  ): DatumType {
     let date = Datum.parse(`24.12.${year}`)
     const daysToLastSunday = date.day() === 0 ? 7 : date.day()
     date = date.subtract(daysToLastSunday, 'day')
-    date = date.subtract(4 - adventNo, 'week')
+    date = date.subtract(sundayNo, 'week')
     return Datum.format(date)
   }
 }
