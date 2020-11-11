@@ -23,6 +23,13 @@ export class Datum {
     }
   }
 
+  public static toEightDigits(date: DatumType): string {
+    const year = ('20' + date.year).slice(-4)
+    const month = ('0' + date.month).slice(-2)
+    const day = ('0' + date.day).slice(-2)
+    return `${year}${month}${day}`
+  }
+
   public static getMuttertag(year: number): DatumType {
     // 2. Sonntag im Mai
     let date = Datum.parse(`01.05.${year}`)
