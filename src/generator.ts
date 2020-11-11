@@ -11,7 +11,10 @@ import { Datum } from './datum'
 export class Generator {
   private ical: string[] = []
 
-  private append(key: string, value: string | number | boolean | undefined) {
+  private append(
+    key: string,
+    value: string | number | boolean | undefined,
+  ): void {
     if (typeof value === 'undefined') {
       return
     } else if (typeof value === 'boolean') {
@@ -32,7 +35,7 @@ export class Generator {
     return this.ical.join('\n')
   }
 
-  private createHeader() {
+  private createHeader(): void {
     this.append('BEGIN', 'VCALENDAR')
     this.append('PRODID', 'AppointmentCreator')
     this.append('VERSION', '2.0')
@@ -40,7 +43,7 @@ export class Generator {
     this.append('X-MS-OLK-FORCEINSPECTOROPEN', true)
   }
 
-  private createItem(item: CalenderItem) {
+  private createItem(item: CalenderItem): void {
     this.append('BEGIN', 'VEVENT')
 
     this.append('CATEGORIES', item.category)
@@ -60,7 +63,7 @@ export class Generator {
 
     this.append('END', 'VEVENT')
   }
-  private createFooter() {
+  private createFooter(): void {
     this.append('END', 'VCALENDAR')
   }
 }
