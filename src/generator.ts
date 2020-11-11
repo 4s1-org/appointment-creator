@@ -1,10 +1,3 @@
-/**
- * https://www.kanzaki.com/docs/ical/transp.html
- *   transvalue = "OPAQUE"      ;Blocks or opaque on busy time searches.
-             / "TRANSPARENT" ;Transparent on busy time searches.
-     ;Default value is OPAQUE
- */
-
 import { CalenderItem } from './calendar-item'
 import { Datum } from './datum'
 
@@ -63,6 +56,7 @@ export class Generator {
 
     this.append('END', 'VEVENT')
   }
+
   private createFooter(): void {
     this.append('END', 'VCALENDAR')
   }
