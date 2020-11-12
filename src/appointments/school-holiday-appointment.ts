@@ -1,8 +1,9 @@
+import { AppointmentTypeKey } from './appointment-type'
 import { MultiDayAppointment } from './multi-day-appointment'
 
 export class SchoolHolidayAppointment extends MultiDayAppointment {
-  constructor(begin: string, end: string, text: string) {
-    super(begin, end, text, false, 'Ferien')
+  constructor(type: AppointmentTypeKey, begin: string, end: string) {
+    super(type, begin, end, false, 'Ferien')
   }
 
   public split(): MultiDayAppointment[] {
