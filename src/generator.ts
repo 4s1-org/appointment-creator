@@ -1,13 +1,10 @@
-import { CalenderItem } from './calendar-item'
+import { BaseAppointment } from './appointments/base-appointment'
 import { Datum } from './datum'
 
 export class Generator {
   private ical: string[] = []
 
-  private append(
-    key: string,
-    value: string | number | boolean | undefined,
-  ): void {
+  private append(key: string, value: string | number | boolean | undefined): void {
     if (typeof value === 'undefined') {
       return
     } else if (typeof value === 'boolean') {
@@ -17,7 +14,7 @@ export class Generator {
     this.ical.push(`${key}:${value}`)
   }
 
-  public generate(items: CalenderItem[]): string {
+  public generate(items: BaseAppointment[]): string {
     this.ical.length = 0
 
     this.createHeader()
@@ -36,13 +33,13 @@ export class Generator {
     this.append('X-MS-OLK-FORCEINSPECTOROPEN', true)
   }
 
-  private createItem(item: CalenderItem): void {
+  private createItem(item: BaseAppointment): void {
     this.append('BEGIN', 'VEVENT')
 
     this.append('CATEGORIES', item.category)
     this.append('CLASS', 'PUBLIC')
     this.append('DTSTART;VALUE=DATE', Datum.toEightDigits(item.begin))
-    this.append('DTEND;VALUE=DATE', Datum.toEightDigits(item.end))
+    this.append('DTEND;VALUE=DATE', Datum.toEightDigits(item.endPlusOneDay))
     this.append('PRIORITY', 5)
     this.append('SEQUENCE', 0)
     this.append('SUMMARY', item.text)
