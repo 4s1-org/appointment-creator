@@ -10,7 +10,7 @@ enum SchoolHolidayType {
 // https://kultusministerium.hessen.de/schulsystem/ferien/ferientermine
 export const ferienListe: SchoolHolidayAppointment[] = [
   // Schuljahr 2019/2020
-  new SchoolHolidayAppointment('30.09.2019', '12.10.2019', SchoolHolidayType.herbstferien),
+  new SchoolHolidayAppointment('heFe', '30.09.2019', '12.10.2019'),
   new SchoolHolidayAppointment('23.12.2019', '11.01.2020', SchoolHolidayType.weihnachtsferien),
   new SchoolHolidayAppointment('06.04.2020', '18.04.2020', SchoolHolidayType.osterferien),
   new SchoolHolidayAppointment('06.07.2020', '14.08.2020', SchoolHolidayType.sommerferien),
