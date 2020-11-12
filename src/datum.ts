@@ -46,10 +46,7 @@ export class Datum {
     return Datum.getSundayBeforeChristmas(year, 4)
   }
 
-  private static getSundayBeforeChristmas(
-    year: number,
-    sundayNo: number,
-  ): DatumType {
+  private static getSundayBeforeChristmas(year: number, sundayNo: number): DatumType {
     let date = Datum.parse(`24.12.${year}`)
     const daysToLastSunday = date.day() === 0 ? 7 : date.day()
     date = date.subtract(daysToLastSunday, 'day')
