@@ -1,17 +1,15 @@
-import { CalenderItem } from './calendar-item'
-import { ferienListe } from './ferien-liste'
+import { BaseAppointment } from './appointments/base-appointment'
+import { schoolHolidayList } from './school-holiday-list'
 import { Generator } from './generator'
 
 async function main(): Promise<void> {
-  for (const ferien of ferienListe) {
-    for (const woche of ferien.split()) {
-      console.log(woche.beginn.format(), woche.ende.format(), woche.text)
-    }
+  let liste: BaseAppointment[] = []
+  for (const ferien of schoolHolidayList) {
+    liste = liste.concat(ferien.split())
   }
 
-  const item1 = new CalenderItem({ year: 2020, month: 11, day: 11 }, { year: 2020, month: 11, day: 12 }, "Test1", true, "Feiertag")
   const generator = new Generator()
-  const txt = generator.generate([item1])
+  const txt = generator.generate(liste)
   console.log(txt)
 }
 

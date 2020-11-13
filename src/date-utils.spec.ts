@@ -1,6 +1,6 @@
 import { expect } from 'chai'
 import { describe, it } from 'mocha'
-import { Datum } from './datum'
+import { DateUtils } from './date-utils'
 
 describe('Datum', () => {
   describe('Muttertag,', () => {
@@ -8,7 +8,7 @@ describe('Datum', () => {
       // Arrange
       const year = 2020
       // Act
-      const date = Datum.getMuttertag(year)
+      const date = DateUtils.getMuttertag(year)
       // Assert
       expect(date.year).to.be.eq(year)
       expect(date.month).to.be.eq(5)
@@ -19,7 +19,7 @@ describe('Datum', () => {
       // Arrange
       const year = 2016
       // Act
-      const date = Datum.getMuttertag(year)
+      const date = DateUtils.getMuttertag(year)
       // Assert
       expect(date.year).to.be.eq(year)
       expect(date.month).to.be.eq(5)
@@ -32,7 +32,7 @@ describe('Datum', () => {
       // Arrange
       const year = 2020
       // Act
-      const date = Datum.getAdvent(year, 1)
+      const date = DateUtils.getAdvent(year, 1)
       // Assert
       expect(date.year).to.be.eq(year)
       expect(date.month).to.be.eq(11)
@@ -43,7 +43,7 @@ describe('Datum', () => {
       // Arrange
       const year = 2017
       // Act
-      const date = Datum.getAdvent(year, 1)
+      const date = DateUtils.getAdvent(year, 1)
       // Assert
       expect(date.year).to.be.eq(year)
       expect(date.month).to.be.eq(11)
@@ -56,7 +56,7 @@ describe('Datum', () => {
       // Arrange
       const year = 2020
       // Act
-      const date = Datum.getTodensonntag(year)
+      const date = DateUtils.getTodensonntag(year)
       // Assert
       expect(date.year).to.be.eq(year)
       expect(date.month).to.be.eq(11)
@@ -67,7 +67,7 @@ describe('Datum', () => {
       // Arrange
       const year = 2017
       // Act
-      const date = Datum.getTodensonntag(year)
+      const date = DateUtils.getTodensonntag(year)
       // Assert
       expect(date.year).to.be.eq(year)
       expect(date.month).to.be.eq(11)
