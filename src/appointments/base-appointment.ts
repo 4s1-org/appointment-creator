@@ -1,16 +1,16 @@
 import { Datum, DatumType } from '../datum'
-import { appointmentType } from './appointment-type'
+import { AppointmentType, AppointmentTypeKey } from './appointment-type'
 
 export abstract class BaseAppointment {
-  private _type: keyof typeof appointmentType
+  private _typeKey: AppointmentTypeKey
   private _begin: DatumType
   private _end: DatumType
   private _endPlusOneDay: DatumType
   private _isBlocking: boolean
   private _category: string
 
-  constructor(type: keyof typeof appointmentType, begin: string, end: string, isBlocking: boolean, category?: string) {
-    this._type = type
+  constructor(typeKey: AppointmentTypeKey, begin: string, end: string, isBlocking: boolean, category?: string) {
+    this._typeKey = typeKey
     this._begin = Datum.format(Datum.parse(begin))
     const parsedEnd = Datum.parse(end)
     this._end = Datum.format(parsedEnd)
@@ -32,7 +32,7 @@ export abstract class BaseAppointment {
   }
 
   get text(): string {
-    return AppointmentType[this._type]
+    return AppointmentType[this._typeKey]
   }
 
   get isBlocking(): boolean {

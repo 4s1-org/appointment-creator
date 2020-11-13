@@ -5,7 +5,7 @@ import { SchoolHolidayAppointment } from './school-holiday-appointment'
 describe('Ferien', () => {
   it('split 2 Wochen', () => {
     // Arrange
-    const ferien = new SchoolHolidayAppointment('02.11.2020', '13.11.2020', 'Foo')
+    const ferien = new SchoolHolidayAppointment('heFe', '02.11.2020', '13.11.2020')
     // Act
     const split = ferien.split()
     // Assert
