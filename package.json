@@ -25,7 +25,8 @@
     "test": "mocha --require ts-node/register src/**/*.spec.ts",
     "test:cov": "npm run test:cov-html && opener coverage/index.html",
     "test:cov-html": "nyc --reporter=html --reporter=text-summary npm test",
-    "test:cov-text": "nyc --reporter=text-summary npm test"
+    "test:cov-text": "nyc --reporter=text-summary npm test",
+    "validate": "npm run lint && npm run build && npm run test"
   },
   "prettier": "@hest-lab/eslint-config",
   "dependencies": {

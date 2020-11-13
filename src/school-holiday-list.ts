@@ -1,7 +1,7 @@
 import { SchoolHolidayAppointment } from './appointments/school-holiday-appointment'
 
 // https://kultusministerium.hessen.de/schulsystem/ferien/ferientermine
-export const ferienListe: SchoolHolidayAppointment[] = [
+export const schoolHolidayList: SchoolHolidayAppointment[] = [
   // Schuljahr 2019/2020
   new SchoolHolidayAppointment('heFe', '30.09.2019', '12.10.2019'),
   new SchoolHolidayAppointment('weFe', '23.12.2019', '11.01.2020'),

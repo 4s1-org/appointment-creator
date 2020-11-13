@@ -1,45 +1,32 @@
-import { Datum, DatumType } from '../datum'
+import dayjs from 'dayjs'
+import { DateUtils } from '../date-utils'
 import { AppointmentType, AppointmentTypeKey } from './appointment-type'
 
 export abstract class BaseAppointment {
-  private _typeKey: AppointmentTypeKey
-  private _begin: DatumType
-  private _end: DatumType
-  private _endPlusOneDay: DatumType
-  private _isBlocking: boolean
-  private _category: string
+  private _begin: dayjs.Dayjs
+  private _end: dayjs.Dayjs
 
-  constructor(typeKey: AppointmentTypeKey, begin: string, end: string, isBlocking: boolean, category?: string) {
-    this._typeKey = typeKey
-    this._begin = Datum.format(Datum.parse(begin))
-    const parsedEnd = Datum.parse(end)
-    this._end = Datum.format(parsedEnd)
-    this._endPlusOneDay = Datum.format(parsedEnd.add(1, 'day'))
-    this._isBlocking = isBlocking
-    this._category = category || ''
+  constructor(
+    public readonly typeKey: AppointmentTypeKey,
+    begin: string,
+    end: string,
+    public readonly isBlocking: boolean,
+    public readonly category?: string,
+    public readonly additionalText?: string,
+  ) {
+    this._begin = DateUtils.parse(begin)
+    this._end = DateUtils.parse(end)
   }
 
-  get begin(): DatumType {
+  get begin(): dayjs.Dayjs {
     return this._begin
   }
 
-  get end(): DatumType {
+  get end(): dayjs.Dayjs {
     return this._end
   }
 
-  get endPlusOneDay(): DatumType {
-    return this._endPlusOneDay
-  }
-
   get text(): string {
-    return AppointmentType[this._typeKey]
-  }
-
-  get isBlocking(): boolean {
-    return this._isBlocking
-  }
-
-  get category(): string {
-    return this._category
+    return AppointmentType[this.typeKey]
   }
 }
