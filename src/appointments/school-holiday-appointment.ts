@@ -9,19 +9,24 @@ export class SchoolHolidayAppointment extends MultiDayAppointment {
   public split(): MultiDayAppointment[] {
     const result: MultiDayAppointment[] = []
 
-    // let datum = this._beginn
-    // let woche = 1
+    let datum = this.begin
+    let woche = 1
 
-    // while (datum < this._ende) {
-    //   result.push({
-    //     beginn: datum,
-    //     ende: datum.add(6, 'day'),
-    //     text: `${this.text} (Woche ${woche})`,
-    //   })
+    while (datum < this.end) {
+      result.push(
+        new MultiDayAppointment(
+          this.typeKey,
+          datum.format('DD.MM.YYYY'),
+          datum.add(6, 'day').format('DD.MM.YYYY'),
+          this.isBlocking,
+          this.category,
+          `(Woche ${woche})`,
+        ),
+      )
 
-    //   woche++
-    //   datum = datum.add(7, 'day')
-    // }
+      woche++
+      datum = datum.add(7, 'day')
+    }
 
     return result
   }

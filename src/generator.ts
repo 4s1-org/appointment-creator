@@ -1,5 +1,5 @@
 import { BaseAppointment } from './appointments/base-appointment'
-import { Datum } from './datum'
+import { DateUtils } from './date-utils'
 
 export class Generator {
   private ical: string[] = []
@@ -36,13 +36,15 @@ export class Generator {
   private createItem(item: BaseAppointment): void {
     this.append('BEGIN', 'VEVENT')
 
-    this.append('CATEGORIES', item.category)
+    if (item.category) {
+      this.append('CATEGORIES', item.category)
+    }
     this.append('CLASS', 'PUBLIC')
-    this.append('DTSTART;VALUE=DATE', Datum.toEightDigits(item.begin))
-    this.append('DTEND;VALUE=DATE', Datum.toEightDigits(item.endPlusOneDay))
+    this.append('DTSTART;VALUE=DATE', DateUtils.toEightDigits(item.begin))
+    this.append('DTEND;VALUE=DATE', DateUtils.toEightDigits(item.end.add(1, 'day')))
     this.append('PRIORITY', 5)
     this.append('SEQUENCE', 0)
-    this.append('SUMMARY', item.text)
+    this.append('SUMMARY', item.additionalText ? `${item.text} ${item.additionalText}` : item.text)
     this.append('TRANSP', item.isBlocking ? 'OPAQUE' : 'TRANSPARENT')
     // ToDo
     this.append('UID', '65d14e8d-3094-42be-9b2a-2fc52446e69e.1473909234213')
