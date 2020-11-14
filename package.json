@@ -22,7 +22,7 @@
     "lint": "eslint --ext .ts src/",
     "lint:fix": "npm run lint -- --fix",
     "start": "ts-node src/index.ts",
-    "test": "mocha --require ts-node/register src/**/*.spec.ts",
+    "test": "mocha --require ts-node/register src/*.spec.ts src/**/*.spec.ts",
     "test:cov": "npm run test:cov-html && opener coverage/index.html",
     "test:cov-html": "nyc --reporter=html --reporter=text-summary npm test",
     "test:cov-text": "nyc --reporter=text-summary npm test",
