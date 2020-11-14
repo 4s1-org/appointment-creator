@@ -9,6 +9,10 @@ export class DateUtils {
     return dayjs(datum, 'DD.MM.YYYY')
   }
 
+  public static format(date: dayjs.Dayjs): string {
+    return date.format('DD.MM.YYYY')
+  }
+
   public static toEightDigits(date: dayjs.Dayjs): string {
     return date.format('YYYYMMDD')
   }
