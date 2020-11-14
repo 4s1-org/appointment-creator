@@ -6,6 +6,7 @@ import { CategoryTypeKey } from './category-type'
 export abstract class BaseAppointment {
   private _begin: dayjs.Dayjs
   private _end: dayjs.Dayjs
+  private _additionalKey: string = ''
 
   constructor(
     public readonly typeKey: AppointmentTypeKey,
@@ -29,5 +30,12 @@ export abstract class BaseAppointment {
 
   get text(): string {
     return AppointmentType[this.typeKey]
+  }
+
+  public get additionalKey(): string {
+    return this._additionalKey
+  }
+  public set additionalKey(key: string) {
+    this._additionalKey = key
   }
 }
