@@ -10,9 +10,7 @@ describe('Datum', () => {
       // Act
       const date = DateUtils.getMuttertag(year)
       // Assert
-      expect(date.year()).to.be.eq(year)
-      expect(date.month() + 1).to.be.eq(5)
-      expect(date.date()).to.be.eq(10)
+      expect(DateUtils.format(date)).to.be.eq('10.05.2020')
     })
 
     it('wenn der erste ein Sonntag ist', () => {
@@ -21,9 +19,7 @@ describe('Datum', () => {
       // Act
       const date = DateUtils.getMuttertag(year)
       // Assert
-      expect(date.year()).to.be.eq(year)
-      expect(date.month() + 1).to.be.eq(5)
-      expect(date.date()).to.be.eq(8)
+      expect(DateUtils.format(date)).to.be.eq('08.05.2016')
     })
   })
 
@@ -34,9 +30,7 @@ describe('Datum', () => {
       // Act
       const date = DateUtils.getAdvent(year, 1)
       // Assert
-      expect(date.year()).to.be.eq(year)
-      expect(date.month() + 1).to.be.eq(11)
-      expect(date.date()).to.be.eq(29)
+      expect(DateUtils.format(date)).to.be.eq('29.11.2020')
     })
 
     it('wenn Heiligabend ein Sonntag ist', () => {
@@ -45,9 +39,7 @@ describe('Datum', () => {
       // Act
       const date = DateUtils.getAdvent(year, 1)
       // Assert
-      expect(date.year()).to.be.eq(year)
-      expect(date.month() + 1).to.be.eq(11)
-      expect(date.date()).to.be.eq(26)
+      expect(DateUtils.format(date)).to.be.eq('26.11.2017')
     })
   })
 
@@ -58,9 +50,7 @@ describe('Datum', () => {
       // Act
       const date = DateUtils.getTodensonntag(year)
       // Assert
-      expect(date.year()).to.be.eq(year)
-      expect(date.month() + 1).to.be.eq(11)
-      expect(date.date()).to.be.eq(22)
+      expect(DateUtils.format(date)).to.be.eq('22.11.2020')
     })
 
     it('wenn Heiligabend ein Sonntag ist', () => {
@@ -69,9 +59,7 @@ describe('Datum', () => {
       // Act
       const date = DateUtils.getTodensonntag(year)
       // Assert
-      expect(date.year()).to.be.eq(year)
-      expect(date.month() + 1).to.be.eq(11)
-      expect(date.date()).to.be.eq(19)
+      expect(DateUtils.format(date)).to.be.eq('19.11.2017')
     })
   })
 
@@ -82,9 +70,7 @@ describe('Datum', () => {
       // Act
       const date = DateUtils.getEasterSunday(year)
       // Assert
-      expect(date.year()).to.be.eq(year)
-      expect(date.month() + 1).to.be.eq(4)
-      expect(date.date()).to.be.eq(12)
+      expect(DateUtils.format(date)).to.be.eq('12.04.2020')
     })
 
     it('2021', () => {
@@ -93,9 +79,7 @@ describe('Datum', () => {
       // Act
       const date = DateUtils.getEasterSunday(year)
       // Assert
-      expect(date.year()).to.be.eq(year)
-      expect(date.month() + 1).to.be.eq(4)
-      expect(date.date()).to.be.eq(4)
+      expect(DateUtils.format(date)).to.be.eq('04.04.2021')
     })
   })
 })
