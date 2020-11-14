@@ -13,16 +13,16 @@ export class SchoolHolidayAppointment extends MultiDayAppointment {
     let woche = 1
 
     while (datum < this.end) {
-      result.push(
-        new MultiDayAppointment(
-          this.typeKey,
-          datum.format('DD.MM.YYYY'),
-          datum.add(6, 'day').format('DD.MM.YYYY'),
-          this.isBlocking,
-          this.categoryKey,
-          `(Woche ${woche})`,
-        ),
+      const appointment = new MultiDayAppointment(
+        this.typeKey,
+        datum.format('DD.MM.YYYY'),
+        datum.add(6, 'day').format('DD.MM.YYYY'),
+        this.isBlocking,
+        this.categoryKey,
+        `(Woche ${woche})`,
       )
+      appointment.additionalKey = woche.toString()
+      result.push(appointment)
 
       woche++
       datum = datum.add(7, 'day')

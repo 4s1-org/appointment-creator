@@ -47,8 +47,11 @@ export class Generator {
     this.append('SEQUENCE', 0)
     this.append('SUMMARY', item.additionalText ? `${item.text} ${item.additionalText}` : item.text)
     this.append('TRANSP', item.isBlocking ? 'OPAQUE' : 'TRANSPARENT')
-    // ToDo
-    this.append('UID', `creator-${item.typeKey}-${item.begin.year()}`)
+    let uid = `creator-${item.typeKey}-${item.begin.year()}`
+    if (item.additionalKey) {
+      uid = `${uid}-${item.additionalKey}`
+    }
+    this.append('UID', uid)
     this.append('X-MICROSOFT-CDO-BUSYSTATUS', item.isBlocking ? 'BUSY' : 'FREE')
     this.append('X-MICROSOFT-CDO-IMPORTANCE', 1)
     this.append('X-MICROSOFT-DISALLOW-COUNTER', false)
