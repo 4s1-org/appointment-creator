@@ -3,7 +3,7 @@ import { MultiDayAppointment } from './multi-day-appointment'
 
 export class SchoolHolidayAppointment extends MultiDayAppointment {
   constructor(type: AppointmentTypeKey, begin: string, end: string) {
-    super(type, begin, end, false, 'Ferien')
+    super(type, begin, end, false, 'fe')
   }
 
   public split(): MultiDayAppointment[] {
@@ -19,7 +19,7 @@ export class SchoolHolidayAppointment extends MultiDayAppointment {
           datum.format('DD.MM.YYYY'),
           datum.add(6, 'day').format('DD.MM.YYYY'),
           this.isBlocking,
-          this.category,
+          this.categoryKey,
           `(Woche ${woche})`,
         ),
       )

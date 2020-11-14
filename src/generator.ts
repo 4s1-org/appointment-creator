@@ -1,4 +1,5 @@
 import { BaseAppointment } from './appointments/base-appointment'
+import { CategoryType } from './appointments/category-type'
 import { DateUtils } from './date-utils'
 
 export class Generator {
@@ -36,8 +37,8 @@ export class Generator {
   private createItem(item: BaseAppointment): void {
     this.append('BEGIN', 'VEVENT')
 
-    if (item.category) {
-      this.append('CATEGORIES', item.category)
+    if (item.categoryKey) {
+      this.append('CATEGORIES', CategoryType[item.categoryKey])
     }
     this.append('CLASS', 'PUBLIC')
     this.append('DTSTART;VALUE=DATE', DateUtils.toEightDigits(item.begin))
@@ -47,7 +48,7 @@ export class Generator {
     this.append('SUMMARY', item.additionalText ? `${item.text} ${item.additionalText}` : item.text)
     this.append('TRANSP', item.isBlocking ? 'OPAQUE' : 'TRANSPARENT')
     // ToDo
-    this.append('UID', '65d14e8d-3094-42be-9b2a-2fc52446e69e.1473909234213')
+    this.append('UID', `creator-${item.typeKey}-${item.begin.year()}`)
     this.append('X-MICROSOFT-CDO-BUSYSTATUS', item.isBlocking ? 'BUSY' : 'FREE')
     this.append('X-MICROSOFT-CDO-IMPORTANCE', 1)
     this.append('X-MICROSOFT-DISALLOW-COUNTER', false)

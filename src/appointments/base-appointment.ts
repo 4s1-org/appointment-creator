@@ -1,6 +1,7 @@
 import dayjs from 'dayjs'
 import { DateUtils } from '../date-utils'
 import { AppointmentType, AppointmentTypeKey } from './appointment-type'
+import { CategoryTypeKey } from './category-type'
 
 export abstract class BaseAppointment {
   private _begin: dayjs.Dayjs
@@ -11,7 +12,7 @@ export abstract class BaseAppointment {
     begin: string,
     end: string,
     public readonly isBlocking: boolean,
-    public readonly category?: string,
+    public readonly categoryKey?: CategoryTypeKey,
     public readonly additionalText?: string,
   ) {
     this._begin = DateUtils.parse(begin)
