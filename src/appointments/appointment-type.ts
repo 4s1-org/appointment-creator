@@ -22,6 +22,12 @@ export enum AppointmentType {
   ps = 'Pfingststonntag',
   pm = 'Pfingstmontag',
   fl = 'Fronleichnam',
+  mu = 'Muttertag',
+  adv1 = '1. Advent',
+  adv2 = '2. Advent',
+  adv3 = '3. Advent',
+  adv4 = '4. Advent',
+  tso = 'Todensonntag',
 }
 
 export type AppointmentTypeKey = keyof typeof AppointmentType

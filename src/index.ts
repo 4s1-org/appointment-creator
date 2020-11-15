@@ -1,7 +1,7 @@
 import { BaseAppointment } from './appointments/base-appointment'
 import { schoolHolidayList } from './school-holiday-list'
 import { Generator } from './generator'
-import { easterBaseList, holidayList } from './holiday-list'
+import { adventList, easterBaseList, holidayList } from './holiday-list'
 import fs from 'fs'
 import path from 'path'
 
@@ -12,6 +12,7 @@ async function main(): Promise<void> {
   }
   liste = liste.concat(holidayList)
   liste = liste.concat(easterBaseList)
+  liste = liste.concat(adventList)
 
   const generator = new Generator()
   const txt = generator.generate(liste)
