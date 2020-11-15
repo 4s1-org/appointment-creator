@@ -12,6 +12,8 @@ export const holidayList: SingleDayAppointment[] = [
   new SingleDayAppointment('wei1', `25.12.${year}`, true, 'fei'),
   new SingleDayAppointment('wei2', `26.12.${year}`, true, 'fei'),
   new SingleDayAppointment('sil', `31.12.${year}`, true, 'fei'),
+  new SingleDayAppointment('mu', DateUtils.format(DateUtils.getMuttertag(year)), true, 'info'),
+  new SingleDayAppointment('tso', DateUtils.format(DateUtils.getTodensonntag(year)), true, 'info'),
 ]
 
 const easterSunday = DateUtils.getEasterSunday(year)
@@ -27,4 +29,11 @@ export const easterBaseList: SingleDayAppointment[] = [
   new SingleDayAppointment('ps', DateUtils.format(easterSunday.add(49, 'd')), true, 'fei'),
   new SingleDayAppointment('pm', DateUtils.format(easterSunday.add(50, 'd')), true, 'fei'),
   new SingleDayAppointment('fl', DateUtils.format(easterSunday.add(60, 'd')), true, 'fei'),
+]
+
+export const adventList: SingleDayAppointment[] = [
+  new SingleDayAppointment('adv1', DateUtils.format(DateUtils.getAdvent(year, 1)), true, 'info'),
+  new SingleDayAppointment('adv2', DateUtils.format(DateUtils.getAdvent(year, 2)), true, 'info'),
+  new SingleDayAppointment('adv3', DateUtils.format(DateUtils.getAdvent(year, 3)), true, 'info'),
+  new SingleDayAppointment('adv4', DateUtils.format(DateUtils.getAdvent(year, 4)), true, 'info'),
 ]
