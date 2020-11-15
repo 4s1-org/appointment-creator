@@ -16,7 +16,7 @@ export class SchoolHolidayAppointment extends MultiDayAppointment {
       const appointment = new MultiDayAppointment(
         this.typeKey,
         datum.format('DD.MM.YYYY'),
-        datum.add(6, 'day').format('DD.MM.YYYY'),
+        datum.add(7 - datum.day(), 'day').format('DD.MM.YYYY'),
         this.isBlocking,
         this.categoryKey,
         `(Woche ${woche})`,
@@ -25,7 +25,7 @@ export class SchoolHolidayAppointment extends MultiDayAppointment {
       result.push(appointment)
 
       woche++
-      datum = datum.add(7, 'day')
+      datum = appointment.end.add(1, 'day')
     }
 
     return result
