@@ -2,6 +2,8 @@ import { BaseAppointment } from './appointments/base-appointment'
 import { schoolHolidayList } from './school-holiday-list'
 import { Generator } from './generator'
 import { easterBaseList, holidayList } from './holiday-list'
+import fs from 'fs'
+import path from 'path'
 
 async function main(): Promise<void> {
   let liste: BaseAppointment[] = []
@@ -13,7 +15,8 @@ async function main(): Promise<void> {
 
   const generator = new Generator()
   const txt = generator.generate(liste)
-  console.log(txt)
+
+  fs.writeFileSync(path.join(__dirname, '..', 'Termine.ics'), txt)
 }
 
 main()
