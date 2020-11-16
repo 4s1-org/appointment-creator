@@ -27,7 +27,7 @@ export enum AppointmentType {
   adv2 = '2. Advent',
   adv3 = '3. Advent',
   adv4 = '4. Advent',
-  tso = 'Todensonntag',
+  tso = 'Totensonntag',
 }
 
 export type AppointmentTypeKey = keyof typeof AppointmentType
