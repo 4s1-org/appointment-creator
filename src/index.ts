@@ -17,7 +17,7 @@ async function main(): Promise<void> {
   const generator = new Generator()
   const txt = generator.generate(liste)
 
-  fs.writeFileSync(path.join(__dirname, '..', 'Termine.ics'), txt)
+  fs.writeFileSync(path.join(__dirname, '..', 'Ferien+Feiertage.ics'), txt)
 }
 
 main()
