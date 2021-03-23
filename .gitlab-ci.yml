@@ -8,15 +8,17 @@ stages:
   stage: linting
   image: node:14-alpine
   script:
-    - npm ci
-    - npm run lint
+    - npm i pnpm -g
+    - pnpm ci
+    - pnpm run lint
 
 .build:
   stage: building
   image: node:14-alpine
   script:
-    - npm ci
-    - npm run build
+    - npm i pnpm -g
+    - pnpm ci
+    - pnpm run build
 
 .test:
   stage: testing
@@ -27,8 +29,9 @@ stages:
       - coverage/
     expire_in: 1 week
   script:
-    - npm ci
-    - npm run test:cov-html
+    - npm i pnpm -g
+    - pnpm ci
+    - pnpm run test:cov-html
 
 validate:
   stage: validating
@@ -39,7 +42,8 @@ validate:
       - coverage/
     expire_in: 1 week
   script:
-    - npm ci
-    - npm run lint
-    - npm run build
-    - npm run test:cov-html
+    - npm i pnpm -g
+    - pnpm ci
+    - pnpm run lint
+    - pnpm run build
+    - pnpm run test:cov-html
