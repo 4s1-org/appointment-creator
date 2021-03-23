@@ -20,15 +20,14 @@
     "prebuild": "rm -rf dist && rm -rf out",
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\"",
-    "lbt": "npm run lint && npm run build && npm run test",
+    "lbt": "pnpm run lint && pnpm run build && pnpm run test",
     "lint": "eslint --ext .ts src/",
-    "lint:fix": "npm run lint -- --fix",
+    "lint:fix": "pnpm run lint -- --fix",
     "start": "ts-node src/index.ts",
     "test": "mocha --require ts-node/register src/*.spec.ts src/**/*.spec.ts",
-    "test:cov": "npm run test:cov-html && opener coverage/index.html",
+    "test:cov": "pnpm run test:cov-html && opener coverage/index.html",
     "test:cov-html": "nyc --reporter=html --reporter=text-summary npm test",
-    "test:cov-text": "nyc --reporter=text-summary npm test",
-    "validate": "npm run lint && npm run build && npm run test"
+    "test:cov-text": "nyc --reporter=text-summary npm test"
   },
   "prettier": "@hest-lab/eslint-config",
   "dependencies": {
