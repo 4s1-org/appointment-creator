@@ -6,7 +6,7 @@ stages:
 
 .lint:
   stage: linting
-  image: node:14-alpine
+  image: node:16-alpine
   script:
     - npm i pnpm -g
     - pnpm i
@@ -14,7 +14,7 @@ stages:
 
 .build:
   stage: building
-  image: node:14-alpine
+  image: node:16-alpine
   script:
     - npm i pnpm -g
     - pnpm i
@@ -22,7 +22,7 @@ stages:
 
 .test:
   stage: testing
-  image: node:14-alpine
+  image: node:16-alpine
   artifacts:
     when: always
     paths:
@@ -35,7 +35,7 @@ stages:
 
 validate:
   stage: validating
-  image: node:14-alpine
+  image: node:16-alpine
   artifacts:
     when: always
     paths:
