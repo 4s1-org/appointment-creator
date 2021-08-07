@@ -1,5 +1,5 @@
 validate:
-  image: node:14-alpine
+  image: node:16-alpine
   tags:
     - Yellow
   artifacts:
