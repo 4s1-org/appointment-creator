@@ -1,4 +1,8 @@
-validate:
+stages:
+  - building
+
+lbt:
+  stage: building
   image: node:14-alpine
   tags:
     - Yellow
