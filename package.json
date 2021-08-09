@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git@gitlab.com:yellow-garbage-group/appointment-creator.git"
   },
-  "license": "ISC",
+  "license": "MIT",
   "author": "Steffen",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
