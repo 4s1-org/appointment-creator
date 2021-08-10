@@ -8,7 +8,7 @@
     "url": "git@gitlab.com:YellowGarbageGroup/appointment-creator.git"
   },
   "license": "MIT",
-  "author": "Steffen",
+  "author": "Steffen <YellowGarbageBag@4s1.de>",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
