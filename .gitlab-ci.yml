@@ -3,7 +3,7 @@ stages:
 
 lbt:
   stage: building
-  image: node:14-alpine
+  image: registry.gitlab.com/yellowgarbagegroup/docker-images/node-with-pnpm:14-alpine
   tags:
     - Yellow
   artifacts:
@@ -12,7 +12,6 @@ lbt:
       - coverage/
     expire_in: 1 week
   script:
-    - npm i pnpm -g
     - pnpm i
     - pnpm run lint
     - pnpm run build
