@@ -3,7 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@types/chai': 4.2.21
   '@types/mocha': 9.0.0
-  '@types/node': ^14.14.7
+  '@types/node': 14.17.9
   '@yellowgarbagegroup/eslint-config': 2.0.1
   chai: 4.3.4
   dayjs: 1.10.6
@@ -21,7 +21,7 @@ dependencies:
 devDependencies:
   '@types/chai': 4.2.21
   '@types/mocha': 9.0.0
-  '@types/node': 14.14.7
+  '@types/node': 14.17.9
   '@yellowgarbagegroup/eslint-config': 2.0.1_aff669e8eb0d21fc4e2068e6112ef4d0
   chai: 4.3.4
   eslint: 7.32.0
@@ -29,7 +29,7 @@ devDependencies:
   nyc: 15.1.0
   opener: 1.5.2
   prettier: 2.3.2
-  ts-node: 10.2.0_ba9105bce7f4ebce5f8c35d5b55fbd3c
+  ts-node: 10.2.0_3cddbd81c3a53971a7cbc3c93cba6165
   typescript: 4.3.5
 
 packages:
@@ -312,8 +312,8 @@ packages:
     resolution: {integrity: sha512-scN0hAWyLVAvLR9AyW7HoFF5sJZglyBsbPuHO4fv7JRvfmPBMfp1ozWqOf/e4wwPNxezBZXRfWzMb6iFLgEVRA==}
     dev: true
 
-  /@types/node/14.14.7:
-    resolution: {integrity: sha512-Zw1vhUSQZYw+7u5dAwNbIA9TuTotpzY/OF7sJM9FqPOF3SPjKnxrjoTktXDZgUjybf4cWVBP7O8wvKdSaGHweg==}
+  /@types/node/14.17.9:
+    resolution: {integrity: sha512-CMjgRNsks27IDwI785YMY0KLt3co/c0cQ5foxHYv/shC2w8oOnVwz5Ubq1QG5KzrcW+AXk6gzdnxIkDnTvzu3g==}
     dev: true
 
   /@typescript-eslint/eslint-plugin/4.29.0_48ea228fa0647506aa803d17f48b59f7:
@@ -2483,7 +2483,7 @@ packages:
       is-number: 7.0.0
     dev: true
 
-  /ts-node/10.2.0_ba9105bce7f4ebce5f8c35d5b55fbd3c:
+  /ts-node/10.2.0_3cddbd81c3a53971a7cbc3c93cba6165:
     resolution: {integrity: sha512-FstYHtQz6isj8rBtYMN4bZdnXN1vq4HCbqn9vdNQcInRqtB86PePJQIxE6es0PhxKWhj2PHuwbG40H+bxkZPmg==}
     engines: {node: '>=12.0.0'}
     hasBin: true
@@ -2503,7 +2503,7 @@ packages:
       '@tsconfig/node12': 1.0.9
       '@tsconfig/node14': 1.0.1
       '@tsconfig/node16': 1.0.2
-      '@types/node': 14.14.7
+      '@types/node': 14.17.9
       acorn: 8.4.1
       acorn-walk: 8.1.1
       arg: 4.1.3
