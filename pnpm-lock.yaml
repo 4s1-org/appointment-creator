@@ -12,7 +12,7 @@ specifiers:
   nyc: 15.1.0
   opener: 1.5.2
   prettier: 2.3.2
-  ts-node: 10.2.0
+  ts-node: 10.2.1
   typescript: 4.3.5
 
 dependencies:
@@ -29,7 +29,7 @@ devDependencies:
   nyc: 15.1.0
   opener: 1.5.2
   prettier: 2.3.2
-  ts-node: 10.2.0_615e95850269123085c33084da6dfbad
+  ts-node: 10.2.1_615e95850269123085c33084da6dfbad
   typescript: 4.3.5
 
 packages:
@@ -2483,8 +2483,8 @@ packages:
       is-number: 7.0.0
     dev: true
 
-  /ts-node/10.2.0_615e95850269123085c33084da6dfbad:
-    resolution: {integrity: sha512-FstYHtQz6isj8rBtYMN4bZdnXN1vq4HCbqn9vdNQcInRqtB86PePJQIxE6es0PhxKWhj2PHuwbG40H+bxkZPmg==}
+  /ts-node/10.2.1_615e95850269123085c33084da6dfbad:
+    resolution: {integrity: sha512-hCnyOyuGmD5wHleOQX6NIjJtYVIO8bPP8F2acWkB4W06wdlkgyvJtubO/I9NkI88hCFECbsEgoLc0VNkYmcSfw==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     peerDependencies:
