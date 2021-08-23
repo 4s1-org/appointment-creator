@@ -3,7 +3,11 @@ stages:
 
 lbt:
   stage: building
-  image: registry.gitlab.com/yellowgarbagegroup/docker-images/node-with-pnpm:14-alpine
+  image: registry.gitlab.com/yellowgarbagegroup/docker-images/node:14-alpine
+  cache:
+    key: "$CI_COMMIT_REF_SLUG"
+    paths:
+      - .pnpm-store
   artifacts:
     when: always
     paths:
