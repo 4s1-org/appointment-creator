@@ -4,7 +4,7 @@ specifiers:
   '@types/chai': 4.2.21
   '@types/mocha': 9.0.0
   '@types/node': 14.17.12
-  '@yellowgarbagegroup/eslint-config': 2.0.1
+  '@yellowgarbagegroup/eslint-config': 2.1.1
   chai: 4.3.4
   dayjs: 1.10.6
   eslint: 7.32.0
@@ -22,7 +22,7 @@ devDependencies:
   '@types/chai': 4.2.21
   '@types/mocha': 9.0.0
   '@types/node': 14.17.12
-  '@yellowgarbagegroup/eslint-config': 2.0.1_aff669e8eb0d21fc4e2068e6112ef4d0
+  '@yellowgarbagegroup/eslint-config': 2.1.1_aff669e8eb0d21fc4e2068e6112ef4d0
   chai: 4.3.4
   eslint: 7.32.0
   mocha: 9.1.0
@@ -425,8 +425,8 @@ packages:
     resolution: {integrity: sha512-sL/cEvJWAnClXw0wHk85/2L0G6Sj8UB0Ctc1TEMbKSsmpRosqhwj9gWgFRZSrBr2f9tiXISwNhCPmlfqUqyb9Q==}
     dev: true
 
-  /@yellowgarbagegroup/eslint-config/2.0.1_aff669e8eb0d21fc4e2068e6112ef4d0:
-    resolution: {integrity: sha1-TaSxTO+4PZbtxKW1wxH3J/cCbUk=, tarball: https://gitlab.com/api/v4/projects/28730798/packages/npm/@yellowgarbagegroup/eslint-config/-/@yellowgarbagegroup/eslint-config-2.0.1.tgz}
+  /@yellowgarbagegroup/eslint-config/2.1.1_aff669e8eb0d21fc4e2068e6112ef4d0:
+    resolution: {integrity: sha1-5sKfmxJuHlzkkxxOjMwJKHDxKh8=, tarball: https://gitlab.com/api/v4/projects/28730798/packages/npm/@yellowgarbagegroup/eslint-config/-/@yellowgarbagegroup/eslint-config-2.1.1.tgz}
     peerDependencies:
       eslint: '>=7.30.0'
       prettier: '>= 2.3.0'
