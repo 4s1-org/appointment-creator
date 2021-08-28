@@ -8,7 +8,7 @@ specifiers:
   chai: 4.3.4
   dayjs: 1.10.6
   eslint: 7.32.0
-  mocha: 9.1.0
+  mocha: 9.1.1
   nyc: 15.1.0
   opener: 1.5.2
   prettier: 2.3.2
@@ -25,7 +25,7 @@ devDependencies:
   '@yellowgarbagegroup/eslint-config': 2.1.1_aff669e8eb0d21fc4e2068e6112ef4d0
   chai: 4.3.4
   eslint: 7.32.0
-  mocha: 9.1.0
+  mocha: 9.1.1
   nyc: 15.1.0
   opener: 1.5.2
   prettier: 2.3.2
@@ -1803,8 +1803,8 @@ packages:
     resolution: {integrity: sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==}
     dev: true
 
-  /mocha/9.1.0:
-    resolution: {integrity: sha512-Kjg/XxYOFFUi0h/FwMOeb6RoroiZ+P1yOfya6NK7h3dNhahrJx1r2XIT3ge4ZQvJM86mdjNA+W5phqRQh7DwCg==}
+  /mocha/9.1.1:
+    resolution: {integrity: sha512-0wE74YMgOkCgBUj8VyIDwmLUjTsS13WV1Pg7l0SHea2qzZzlq7MDnfbPsHKcELBRk3+izEVkRofjmClpycudCA==}
     engines: {node: '>= 12.0.0'}
     hasBin: true
     dependencies:
