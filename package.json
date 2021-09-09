@@ -3,10 +3,10 @@
   "version": "0.0.1",
   "private": true,
   "description": "appointment creator",
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@gitlab.com/4s1/appointment-creator.git"
+  "bugs": {
+    "url": "https://gitlab.com/4s1/appointment-creator/issues"
   },
+  "repository": "gitlab:4s1/appointment-creator",
   "license": "MIT",
   "author": "Steffen <steffen@4s1.de>",
   "main": "dist/index.js",
