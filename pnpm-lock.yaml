@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@4s1/eslint-config': 3.1.1
+  '@4s1/eslint-config': 3.1.2
   '@types/chai': 4.2.21
   '@types/mocha': 9.0.0
   '@types/node': 14.17.15
@@ -19,7 +19,7 @@ dependencies:
   dayjs: 1.10.6
 
 devDependencies:
-  '@4s1/eslint-config': 3.1.1_4fa6e7bd7b74e131ac98c8b75e0eea1c
+  '@4s1/eslint-config': 3.1.2_4fa6e7bd7b74e131ac98c8b75e0eea1c
   '@types/chai': 4.2.21
   '@types/mocha': 9.0.0
   '@types/node': 14.17.15
@@ -34,10 +34,10 @@ devDependencies:
 
 packages:
 
-  /@4s1/eslint-config/3.1.1_4fa6e7bd7b74e131ac98c8b75e0eea1c:
-    resolution: {integrity: sha1-hrPfT6pGZ/FF5M4l2VuhmWYa19g=, tarball: https://gitlab.com/api/v4/projects/28730798/packages/npm/@4s1/eslint-config/-/@4s1/eslint-config-3.1.1.tgz}
+  /@4s1/eslint-config/3.1.2_4fa6e7bd7b74e131ac98c8b75e0eea1c:
+    resolution: {integrity: sha1-FJW2W7txRUEt82UAoC6qHCQpVFM=, tarball: https://gitlab.com/api/v4/projects/28730798/packages/npm/@4s1/eslint-config/-/@4s1/eslint-config-3.1.2.tgz}
     peerDependencies:
-      eslint: '>=7.30.0'
+      eslint: '>=7.32.0'
       prettier: '>= 2.4.0'
     dependencies:
       '@typescript-eslint/eslint-plugin': 4.31.0_a690ff3776b01e92cf0b93501bb5ae6a
