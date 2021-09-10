@@ -6,7 +6,7 @@ specifiers:
   '@types/mocha': 9.0.0
   '@types/node': 14.17.15
   chai: 4.3.4
-  dayjs: 1.10.6
+  dayjs: 1.10.7
   eslint: 7.32.0
   mocha: 9.1.1
   nyc: 15.1.0
@@ -16,7 +16,7 @@ specifiers:
   typescript: 4.4.2
 
 dependencies:
-  dayjs: 1.10.6
+  dayjs: 1.10.7
 
 devDependencies:
   '@4s1/eslint-config': 3.1.1_4fa6e7bd7b74e131ac98c8b75e0eea1c
@@ -769,8 +769,8 @@ packages:
       which: 2.0.2
     dev: true
 
-  /dayjs/1.10.6:
-    resolution: {integrity: sha512-AztC/IOW4L1Q41A86phW5Thhcrco3xuAA+YX/BLpLWWjRcTj5TOt/QImBLmCKlrF7u7k47arTnOyL6GnbG8Hvw==}
+  /dayjs/1.10.7:
+    resolution: {integrity: sha512-P6twpd70BcPK34K26uJ1KT3wlhpuOAPoMwJzpsIWUxHZ7wpmbdZL/hQqBDfz7hGurYSa5PhzdhDHtt319hL3ig==}
     dev: false
 
   /debug/2.6.9:
