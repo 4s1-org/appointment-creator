@@ -1,4 +1,7 @@
-import { DateTime } from 'luxon'
+import { DateTime, Settings } from 'luxon'
+
+Settings.defaultZone = 'Europe/Berlin'
+Settings.defaultLocale = 'de-DE'
 
 export class DateUtils {
   public static parse(datum: string): DateTime {
