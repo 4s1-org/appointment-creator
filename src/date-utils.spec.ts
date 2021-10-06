@@ -1,6 +1,4 @@
-import { expect } from 'chai'
-import { describe, it } from 'mocha'
-import { DateUtils } from './date-utils'
+import { DateUtils } from './date-utils.js'
 
 describe('Datum', () => {
   describe('Muttertag,', () => {
@@ -10,7 +8,7 @@ describe('Datum', () => {
       // Act
       const date = DateUtils.getMuttertag(year)
       // Assert
-      expect(DateUtils.format(date)).to.be.eq('10.05.2020')
+      expect(DateUtils.format(date)).toEqual('10.05.2020')
     })
 
     it('wenn der erste ein Sonntag ist', () => {
@@ -19,7 +17,7 @@ describe('Datum', () => {
       // Act
       const date = DateUtils.getMuttertag(year)
       // Assert
-      expect(DateUtils.format(date)).to.be.eq('08.05.2016')
+      expect(DateUtils.format(date)).toEqual('08.05.2016')
     })
   })
 
@@ -30,7 +28,7 @@ describe('Datum', () => {
       // Act
       const date = DateUtils.getAdvent(year, 1)
       // Assert
-      expect(DateUtils.format(date)).to.be.eq('29.11.2020')
+      expect(DateUtils.format(date)).toEqual('29.11.2020')
     })
 
     it('wenn Heiligabend ein Sonntag ist', () => {
@@ -39,7 +37,7 @@ describe('Datum', () => {
       // Act
       const date = DateUtils.getAdvent(year, 1)
       // Assert
-      expect(DateUtils.format(date)).to.be.eq('26.11.2017')
+      expect(DateUtils.format(date)).toEqual('26.11.2017')
     })
   })
 
@@ -50,7 +48,7 @@ describe('Datum', () => {
       // Act
       const date = DateUtils.getTodensonntag(year)
       // Assert
-      expect(DateUtils.format(date)).to.be.eq('22.11.2020')
+      expect(DateUtils.format(date)).toEqual('22.11.2020')
     })
 
     it('wenn Heiligabend ein Sonntag ist', () => {
@@ -59,7 +57,7 @@ describe('Datum', () => {
       // Act
       const date = DateUtils.getTodensonntag(year)
       // Assert
-      expect(DateUtils.format(date)).to.be.eq('19.11.2017')
+      expect(DateUtils.format(date)).toEqual('19.11.2017')
     })
   })
 
@@ -70,7 +68,7 @@ describe('Datum', () => {
       // Act
       const date = DateUtils.getEasterSunday(year)
       // Assert
-      expect(DateUtils.format(date)).to.be.eq('12.04.2020')
+      expect(DateUtils.format(date)).toEqual('12.04.2020')
     })
 
     it('2021', () => {
@@ -79,7 +77,7 @@ describe('Datum', () => {
       // Act
       const date = DateUtils.getEasterSunday(year)
       // Assert
-      expect(DateUtils.format(date)).to.be.eq('04.04.2021')
+      expect(DateUtils.format(date)).toEqual('04.04.2021')
     })
   })
 })
