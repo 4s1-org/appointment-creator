@@ -42,12 +42,12 @@ export class Generator {
     }
     this.append('CLASS', 'PUBLIC')
     this.append('DTSTART;VALUE=DATE', DateUtils.toEightDigits(item.begin))
-    this.append('DTEND;VALUE=DATE', DateUtils.toEightDigits(item.end.add(1, 'day')))
+    this.append('DTEND;VALUE=DATE', DateUtils.toEightDigits(item.end.plus({ days: 1 })))
     this.append('PRIORITY', 5)
     this.append('SEQUENCE', 0)
     this.append('SUMMARY', item.additionalText ? `${item.text} ${item.additionalText}` : item.text)
     this.append('TRANSP', item.isBlocking ? 'OPAQUE' : 'TRANSPARENT')
-    let uid = `creator-${item.typeKey}-${item.begin.year()}`
+    let uid = `creator-${item.typeKey}-${item.begin.year}`
     if (item.additionalKey) {
       uid = `${uid}-${item.additionalKey}`
     }
