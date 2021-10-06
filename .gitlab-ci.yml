@@ -15,4 +15,4 @@ validate-job:
     - pnpm i
     - pnpm run lint
     - pnpm run build
-    #- pnpm run test
+    - pnpm run test:cov
