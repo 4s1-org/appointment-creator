@@ -1,5 +1,5 @@
-import { SingleDayAppointment } from './appointments/single-day-appointment'
-import { DateUtils } from './date-utils'
+import { SingleDayAppointment } from './appointments/single-day-appointment.js'
+import { DateUtils } from './date-utils.js'
 
 export function getHolidays(year: number): SingleDayAppointment[] {
   const easterSunday = DateUtils.getEasterSunday(year)

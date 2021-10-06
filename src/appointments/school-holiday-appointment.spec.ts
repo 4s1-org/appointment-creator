@@ -1,7 +1,7 @@
 import { expect } from 'chai'
 import { describe, it } from 'mocha'
-import { DateUtils } from '../date-utils'
-import { SchoolHolidayAppointment } from './school-holiday-appointment'
+import { DateUtils } from '../date-utils.js'
+import { SchoolHolidayAppointment } from './school-holiday-appointment.js'
 
 describe('School Holiday', () => {
   it('split 2 Wochen', () => {

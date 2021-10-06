@@ -1,6 +1,6 @@
 import { expect } from 'chai'
 import { describe, it } from 'mocha'
-import { DateUtils } from './date-utils'
+import { DateUtils } from './date-utils.js'
 
 describe('Datum', () => {
   describe('Muttertag,', () => {
