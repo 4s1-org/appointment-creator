@@ -6,12 +6,13 @@ specifiers:
   '@commitlint/cli': 13.2.0
   '@commitlint/config-conventional': 13.2.0
   '@types/chai': 4.2.22
+  '@types/luxon': 2.0.4
   '@types/mocha': 9.0.0
   '@types/node': 14.17.21
   chai: 4.3.4
-  dayjs: 1.10.7
   eslint: 7.32.0
   husky: 7.0.2
+  luxon: 2.0.2
   mocha: 9.1.2
   nyc: 15.1.0
   opener: 1.5.2
@@ -21,7 +22,7 @@ specifiers:
   typescript: 4.4.3
 
 dependencies:
-  dayjs: 1.10.7
+  luxon: 2.0.2
 
 devDependencies:
   '@4s1/changelog-config': 3.0.0
@@ -29,6 +30,7 @@ devDependencies:
   '@commitlint/cli': 13.2.0_typescript@4.4.3
   '@commitlint/config-conventional': 13.2.0
   '@types/chai': 4.2.22
+  '@types/luxon': 2.0.4
   '@types/mocha': 9.0.0
   '@types/node': 14.17.21
   chai: 4.3.4
@@ -505,6 +507,10 @@ packages:
 
   /@types/json5/0.0.29:
     resolution: {integrity: sha1-7ihweulOEdK4J7y+UnC86n8+ce4=}
+    dev: true
+
+  /@types/luxon/2.0.4:
+    resolution: {integrity: sha512-l3xuhmyF2kBldy15SeY6d6HbK2BacEcSK1qTF1ISPtPHr29JH0C1fndz9ExXLKpGl0J6pZi+dGp1i5xesMt60Q==}
     dev: true
 
   /@types/minimist/1.2.2:
@@ -1202,10 +1208,6 @@ packages:
   /dateformat/3.0.3:
     resolution: {integrity: sha512-jyCETtSl3VMZMWeRo7iY1FL19ges1t55hMo5yaam4Jrsm5EPL89UQkoQRyiI+Yf4k8r2ZpdngkV8hr1lIdjb3Q==}
     dev: true
-
-  /dayjs/1.10.7:
-    resolution: {integrity: sha512-P6twpd70BcPK34K26uJ1KT3wlhpuOAPoMwJzpsIWUxHZ7wpmbdZL/hQqBDfz7hGurYSa5PhzdhDHtt319hL3ig==}
-    dev: false
 
   /debug/2.6.9:
     resolution: {integrity: sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==}
@@ -2468,6 +2470,10 @@ packages:
     dependencies:
       yallist: 4.0.0
     dev: true
+
+  /luxon/2.0.2:
+    resolution: {integrity: sha512-ZRioYLCgRHrtTORaZX1mx+jtxKtKuI5ZDvHNAmqpUzGqSrR+tL4FVLn/CUGMA3h0+AKD1MAxGI5GnCqR5txNqg==}
+    dev: false
 
   /make-dir/3.1.0:
     resolution: {integrity: sha512-g3FeP20LNwhALb/6Cz6Dd4F2ngze0jz7tbzrD2wAV+o9FeNHe4rL+yK2md0J/fiSf1sa1ADhXqi5+oVwOM/eGw==}
