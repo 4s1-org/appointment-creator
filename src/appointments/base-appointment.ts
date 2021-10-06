@@ -1,11 +1,11 @@
-import dayjs from 'dayjs'
 import { DateUtils } from '../date-utils'
 import { AppointmentType, AppointmentTypeKey } from './appointment-type'
 import { CategoryTypeKey } from './category-type'
+import { DateTime } from 'luxon'
 
 export abstract class BaseAppointment {
-  private _begin: dayjs.Dayjs
-  private _end: dayjs.Dayjs
+  private _begin: DateTime
+  private _end: DateTime
   private _additionalKey: string
 
   constructor(
@@ -21,11 +21,11 @@ export abstract class BaseAppointment {
     this._additionalKey = ''
   }
 
-  get begin(): dayjs.Dayjs {
+  get begin(): DateTime {
     return this._begin
   }
 
-  get end(): dayjs.Dayjs {
+  get end(): DateTime {
     return this._end
   }
 
