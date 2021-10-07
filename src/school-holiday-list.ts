@@ -17,4 +17,14 @@ export const schoolHolidayList: SchoolHolidayAppointment[] = [
   new SchoolHolidayAppointment('weFe', '23.12.2021', '08.01.2022'),
   new SchoolHolidayAppointment('osFe', '11.04.2022', '23.04.2022'),
   new SchoolHolidayAppointment('soFe', '25.07.2022', '02.09.2022'),
+  // Schuljahr 2022/2023
+  new SchoolHolidayAppointment('heFe', '24.10.2022', '29.10.2022'),
+  new SchoolHolidayAppointment('weFe', '22.12.2022', '07.01.2023'),
+  new SchoolHolidayAppointment('osFe', '03.04.2023', '22.04.2023'),
+  new SchoolHolidayAppointment('soFe', '24.07.2023', '01.09.2023'),
+  // Schuljahr 2023/2024
+  new SchoolHolidayAppointment('heFe', '23.10.2023', '28.10.2023'),
+  new SchoolHolidayAppointment('weFe', '27.12.2023', '13.01.2024'),
+  new SchoolHolidayAppointment('osFe', '25.03.2024', '13.04.2024'),
+  new SchoolHolidayAppointment('soFe', '15.07.2024', '23.08.2024'),
 ]
