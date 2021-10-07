@@ -8,6 +8,7 @@ validate-job:
     key: '$CI_COMMIT_REF_SLUG'
     paths:
       - .pnpm-store
+  coverage: /All files[^|]*\|[^|]*\s+([\d\.]+)/
   before_script:
     # Access to private packages
     - echo "//gitlab.com/api/v4/packages/npm/:_authToken=${CI_JOB_TOKEN}" >> .npmrc
