@@ -10,7 +10,7 @@ async function main(): Promise<void> {
   for (const ferien of schoolHolidayList) {
     liste = liste.concat(ferien.split())
   }
-  for (let year = 2020; year <= 2022; year++) {
+  for (let year = 2020; year <= 2024; year++) {
     liste = liste.concat(getHolidays(year))
   }
 
