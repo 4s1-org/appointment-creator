@@ -1,5 +1,16 @@
 # Changelog
 
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [1.1.0](https://gitlab.com/4s1/appointment-creator/compare/v1.0.0...v1.1.0) (2021-10-07)
+
+
+### Features
+
+* add 2023 and 2024 to ics file ([a87a02f](https://gitlab.com/4s1/appointment-creator/commit/a87a02f7cd4348f2d23309eb0c648ff41a299c27))
+* add school holidays for 2022/2023 and 2023/2024 ([800aae3](https://gitlab.com/4s1/appointment-creator/commit/800aae30198c48a7d6e4bb3d7e421dc2c997eb13))
+* from dayjs to luxon ([0207e42](https://gitlab.com/4s1/appointment-creator/commit/0207e428c6d9df8031594406eff6b78f02faf39d))
+
 ## 1.0.0 (2021-09-17)
 
 
