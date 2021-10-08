@@ -6,7 +6,7 @@ specifiers:
   '@commitlint/cli': 13.2.0
   '@commitlint/config-conventional': 13.2.0
   '@types/jest': 27.0.2
-  '@types/luxon': 2.0.4
+  '@types/luxon': 2.0.5
   '@types/node': 14.17.21
   eslint: 7.32.0
   husky: 7.0.2
@@ -27,7 +27,7 @@ devDependencies:
   '@commitlint/cli': 13.2.0_typescript@4.4.3
   '@commitlint/config-conventional': 13.2.0
   '@types/jest': 27.0.2
-  '@types/luxon': 2.0.4
+  '@types/luxon': 2.0.5
   '@types/node': 14.17.21
   eslint: 7.32.0
   husky: 7.0.2
@@ -1078,8 +1078,8 @@ packages:
     resolution: {integrity: sha1-7ihweulOEdK4J7y+UnC86n8+ce4=}
     dev: true
 
-  /@types/luxon/2.0.4:
-    resolution: {integrity: sha512-l3xuhmyF2kBldy15SeY6d6HbK2BacEcSK1qTF1ISPtPHr29JH0C1fndz9ExXLKpGl0J6pZi+dGp1i5xesMt60Q==}
+  /@types/luxon/2.0.5:
+    resolution: {integrity: sha512-GKrG5v16BOs9XGpouu33hOkAFaiSDi3ZaDXG9F2yAoyzHRBtksZnI60VWY5aM/yAENCccBejrxw8jDY+9OVlxw==}
     dev: true
 
   /@types/minimist/1.2.2:
