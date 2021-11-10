@@ -1,9 +1,9 @@
-import { BaseAppointment } from './appointments/base-appointment.js'
+import { BaseAppointment } from './appointments/base-appointment'
 import fs from 'fs'
 import path from 'path'
-import { schoolHolidayList } from './school-holiday-list.js'
-import { Generator } from './generator.js'
-import { getHolidays } from './holiday-list.js'
+import { schoolHolidayList } from './school-holiday-list'
+import { Generator } from './generator'
+import { getHolidays } from './holiday-list'
 
 async function main(): Promise<void> {
   let liste: BaseAppointment[] = []

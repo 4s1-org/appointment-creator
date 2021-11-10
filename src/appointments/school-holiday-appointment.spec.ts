@@ -1,5 +1,5 @@
-import { DateUtils } from '../date-utils.js'
-import { SchoolHolidayAppointment } from './school-holiday-appointment.js'
+import { DateUtils } from '../date-utils'
+import { SchoolHolidayAppointment } from './school-holiday-appointment'
 
 describe('School Holiday', () => {
   it('split 2 Wochen', () => {
