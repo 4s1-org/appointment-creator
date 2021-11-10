@@ -1,4 +1,4 @@
-import { DateUtils } from './date-utils.js'
+import { DateUtils } from './date-utils'
 
 describe('Datum', () => {
   describe('Muttertag,', () => {

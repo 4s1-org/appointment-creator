@@ -1,6 +1,6 @@
-import { DateUtils } from '../date-utils.js'
-import { AppointmentType, AppointmentTypeKey } from './appointment-type.js'
-import { CategoryTypeKey } from './category-type.js'
+import { DateUtils } from '../date-utils'
+import { AppointmentType, AppointmentTypeKey } from './appointment-type'
+import { CategoryTypeKey } from './category-type'
 import { DateTime } from 'luxon'
 
 export abstract class BaseAppointment {

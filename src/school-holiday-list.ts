@@ -1,4 +1,4 @@
-import { SchoolHolidayAppointment } from './appointments/school-holiday-appointment.js'
+import { SchoolHolidayAppointment } from './appointments/school-holiday-appointment'
 
 // https://kultusministerium.hessen.de/schulsystem/ferien/ferientermine
 export const schoolHolidayList: SchoolHolidayAppointment[] = [

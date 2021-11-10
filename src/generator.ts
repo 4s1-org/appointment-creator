@@ -1,6 +1,6 @@
-import { BaseAppointment } from './appointments/base-appointment.js'
-import { CategoryType } from './appointments/category-type.js'
-import { DateUtils } from './date-utils.js'
+import { BaseAppointment } from './appointments/base-appointment'
+import { CategoryType } from './appointments/category-type'
+import { DateUtils } from './date-utils'
 
 export class Generator {
   private ical: string[] = []
