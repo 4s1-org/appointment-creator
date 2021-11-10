@@ -1,5 +1,5 @@
-import { AppointmentTypeKey } from './appointment-type.js'
-import { MultiDayAppointment } from './multi-day-appointment.js'
+import { AppointmentTypeKey } from './appointment-type'
+import { MultiDayAppointment } from './multi-day-appointment'
 
 export class SchoolHolidayAppointment extends MultiDayAppointment {
   constructor(type: AppointmentTypeKey, begin: string, end: string) {

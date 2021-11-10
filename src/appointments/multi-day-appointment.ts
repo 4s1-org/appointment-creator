@@ -1,3 +1,3 @@
-import { BaseAppointment } from './base-appointment.js'
+import { BaseAppointment } from './base-appointment'
 
 export class MultiDayAppointment extends BaseAppointment {}
