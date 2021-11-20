@@ -11,6 +11,8 @@ export class SchoolHolidayAppointment extends MultiDayAppointment {
 
     let datum = this.begin
     let woche = 1
+    woche = 1
+    woche = 1
 
     while (datum < this.end) {
       const appointment = new MultiDayAppointment(
