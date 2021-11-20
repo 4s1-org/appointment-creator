@@ -1,5 +1,4 @@
 stages:
-  - check
   - validate
 
 variables:
@@ -7,7 +6,7 @@ variables:
   GIT_DEPTH: '0' # Tells git to fetch all the branches of the project, required by the analysis task
 
 sonarcloud-check:
-  stage: check
+  stage: validate
   image:
     name: sonarsource/sonar-scanner-cli:latest
     entrypoint: ['']
