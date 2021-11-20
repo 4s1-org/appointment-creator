@@ -1,4 +1,4 @@
-ng 13 files with no {
+{
   "verbose": true,
   "testMatch": ["**/src/**/*.spec.ts"]
 }
