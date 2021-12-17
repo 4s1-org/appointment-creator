@@ -1,4 +1,5 @@
 {
   "verbose": true,
-  "testMatch": ["**/src/**/*.spec.ts"]
+  "testMatch": ["**/src/**/*.spec.ts"],
+  "testResultsProcessor": "jest-sonar-reporter"
 }
