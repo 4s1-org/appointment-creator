@@ -20,7 +20,7 @@ validate-job:
     paths:
       - .pnpm-store
   artifacts:
-    path:
+    paths:
       - coverage/
   coverage: /All files[^|]*\|[^|]*\s+([\d\.]+)/
   script:
