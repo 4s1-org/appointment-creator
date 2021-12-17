@@ -13,7 +13,6 @@ specifiers:
   eslint: 8.4.1
   husky: 7.0.4
   jest: 27.4.5
-  jest-sonar-reporter: 2.0.0
   luxon: 2.2.0
   prettier: 2.5.1
   standard-version: 9.3.2
@@ -37,7 +36,6 @@ devDependencies:
   eslint: 8.4.1
   husky: 7.0.4
   jest: 27.4.5_ts-node@10.4.0
-  jest-sonar-reporter: 2.0.0
   prettier: 2.5.1
   standard-version: 9.3.2
   ts-jest: 27.1.2_b65cae1b46840061996b6cc0ea16ca56
@@ -4195,13 +4193,6 @@ packages:
       - supports-color
     dev: true
 
-  /jest-sonar-reporter/2.0.0:
-    resolution: {integrity: sha512-ZervDCgEX5gdUbdtWsjdipLN3bKJwpxbvhkYNXTAYvAckCihobSLr9OT/IuyNIRT1EZMDDwR6DroWtrq+IL64w==}
-    engines: {node: '>=8.0.0'}
-    dependencies:
-      xml: 1.0.1
-    dev: true
-
   /jest-util/27.4.2:
     resolution: {integrity: sha512-YuxxpXU6nlMan9qyLuxHaMMOzXAl5aGZWCSzben5DhLHemYQxCc4YK+4L3ZrCutT8GPQ+ui9k5D8rUJoDioMnA==}
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
@@ -5879,10 +5870,6 @@ packages:
 
   /xml-name-validator/3.0.0:
     resolution: {integrity: sha512-A5CUptxDsvxKJEU3yO6DuWBSJz/qizqzJKOMIfUJHETbBw/sFaDxgd6fxm1ewUaM0jZ444Fc5vC5ROYurg/4Pw==}
-    dev: true
-
-  /xml/1.0.1:
-    resolution: {integrity: sha1-eLpyAgApxbyHuKgaPPzXS0ovweU=}
     dev: true
 
   /xmlchars/2.2.0:
