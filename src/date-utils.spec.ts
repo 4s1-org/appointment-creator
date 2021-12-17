@@ -1,3 +1,4 @@
+import { DateTime } from 'luxon'
 import { DateUtils } from './date-utils'
 
 describe('Datum', () => {
@@ -79,5 +80,14 @@ describe('Datum', () => {
       // Assert
       expect(DateUtils.format(date)).toEqual('04.04.2021')
     })
+  })
+
+  it('2020', () => {
+    // Arrange
+    const date = DateUtils.parse(`02.01.2020`)
+    // Act
+    const res = DateUtils.toEightDigits(date)
+    // Assert
+    expect(res).toEqual('20200102')
   })
 })
