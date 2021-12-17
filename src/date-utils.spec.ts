@@ -1,4 +1,3 @@
-import { DateTime } from 'luxon'
 import { DateUtils } from './date-utils'
 
 describe('Datum', () => {
