@@ -36,7 +36,7 @@
   },
   "prettier": "@4s1/eslint-config",
   "devDependencies": {
-    "@4s1/eslint-config": "3.4.0",
+    "@4s1/eslint-config": "3.5.0",
     "@4s1/ts-config": "1.4.0",
     "@babel/preset-env": "7.16.5",
     "@babel/preset-typescript": "7.16.5",
