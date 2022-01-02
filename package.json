@@ -35,7 +35,7 @@
   },
   "prettier": "@4s1/eslint-config",
   "dependencies": {
-    "luxon": "2.2.0"
+    "luxon": "2.3.0"
   },
   "devDependencies": {
     "@4s1/eslint-config": "3.5.0",

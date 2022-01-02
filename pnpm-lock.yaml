@@ -13,7 +13,7 @@ specifiers:
   eslint: 8.6.0
   husky: 7.0.4
   jest: 27.4.5
-  luxon: 2.2.0
+  luxon: 2.3.0
   prettier: 2.5.1
   standard-version: 9.3.2
   ts-jest: 27.1.2
@@ -21,7 +21,7 @@ specifiers:
   typescript: 4.5.4
 
 dependencies:
-  luxon: 2.2.0
+  luxon: 2.3.0
 
 devDependencies:
   '@4s1/eslint-config': 3.5.0_766453c47335cbed2174775e7834db5c
@@ -4466,8 +4466,8 @@ packages:
       yallist: 4.0.0
     dev: true
 
-  /luxon/2.2.0:
-    resolution: {integrity: sha512-LwmknessH4jVIseCsizUgveIHwlLv/RQZWC2uDSMfGJs7w8faPUi2JFxfyfMcTPrpNbChTem3Uz6IKRtn+LcIA==}
+  /luxon/2.3.0:
+    resolution: {integrity: sha512-gv6jZCV+gGIrVKhO90yrsn8qXPKD8HYZJtrUDSfEbow8Tkw84T9OnCyJhWvnJIaIF/tBuiAjZuQHUt1LddX2mg==}
     engines: {node: '>=12'}
     dev: false
 
