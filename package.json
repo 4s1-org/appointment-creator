@@ -38,7 +38,7 @@
     "luxon": "2.3.0"
   },
   "devDependencies": {
-    "@4s1/eslint-config": "3.5.0",
+    "@4s1/eslint-config": "3.6.0",
     "@4s1/ts-config": "1.4.0",
     "@babel/preset-env": "7.16.7",
     "@babel/preset-typescript": "7.16.7",
