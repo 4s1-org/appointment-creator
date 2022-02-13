@@ -1,92 +1,83 @@
 import { DateUtils } from './date-utils'
+import test from 'ava'
 
-describe('Datum', () => {
-  describe('Muttertag,', () => {
-    it('wenn der erste kein Sonntag ist', () => {
-      // Arrange
-      const year = 2020
-      // Act
-      const date = DateUtils.getMuttertag(year)
-      // Assert
-      expect(DateUtils.format(date)).toEqual('10.05.2020')
-    })
+test('Muttertag, wenn der erste kein Sonntag ist', (t) => {
+  // Arrange
+  const year = 2020
+  // Act
+  const date = DateUtils.getMuttertag(year)
+  // Assert
+  t.is(DateUtils.format(date), '10.05.2020')
+})
 
-    it('wenn der erste ein Sonntag ist', () => {
-      // Arrange
-      const year = 2016
-      // Act
-      const date = DateUtils.getMuttertag(year)
-      // Assert
-      expect(DateUtils.format(date)).toEqual('08.05.2016')
-    })
-  })
+test('Muttertag, wenn der erste ein Sonntag ist', (t) => {
+  // Arrange
+  const year = 2016
+  // Act
+  const date = DateUtils.getMuttertag(year)
+  // Assert
+  t.is(DateUtils.format(date), '08.05.2016')
+})
 
-  describe('1. Advent,', () => {
-    it('wenn Heiligabend kein Sonntag ist', () => {
-      // Arrange
-      const year = 2020
-      // Act
-      const date = DateUtils.getAdvent(year, 1)
-      // Assert
-      expect(DateUtils.format(date)).toEqual('29.11.2020')
-    })
+test('1. Advent,wenn Heiligabend kein Sonntag ist', (t) => {
+  // Arrange
+  const year = 2020
+  // Act
+  const date = DateUtils.getAdvent(year, 1)
+  // Assert
+  t.is(DateUtils.format(date), '29.11.2020')
+})
 
-    it('wenn Heiligabend ein Sonntag ist', () => {
-      // Arrange
-      const year = 2017
-      // Act
-      const date = DateUtils.getAdvent(year, 1)
-      // Assert
-      expect(DateUtils.format(date)).toEqual('26.11.2017')
-    })
-  })
+test('1. Advent,wenn Heiligabend ein Sonntag ist', (t) => {
+  // Arrange
+  const year = 2017
+  // Act
+  const date = DateUtils.getAdvent(year, 1)
+  // Assert
+  t.is(DateUtils.format(date), '26.11.2017')
+})
 
-  describe('Todensonntag,', () => {
-    it('wenn Heiligabend kein Sonntag ist', () => {
-      // Arrange
-      const year = 2020
-      // Act
-      const date = DateUtils.getTodensonntag(year)
-      // Assert
-      expect(DateUtils.format(date)).toEqual('22.11.2020')
-    })
+test('Totensonntag, wenn Heiligabend kein Sonntag ist', (t) => {
+  // Arrange
+  const year = 2020
+  // Act
+  const date = DateUtils.getTodensonntag(year)
+  // Assert
+  t.is(DateUtils.format(date), '22.11.2020')
+})
 
-    it('wenn Heiligabend ein Sonntag ist', () => {
-      // Arrange
-      const year = 2017
-      // Act
-      const date = DateUtils.getTodensonntag(year)
-      // Assert
-      expect(DateUtils.format(date)).toEqual('19.11.2017')
-    })
-  })
+test('Totensonntag, wenn Heiligabend ein Sonntag ist', (t) => {
+  // Arrange
+  const year = 2017
+  // Act
+  const date = DateUtils.getTodensonntag(year)
+  // Assert
+  t.is(DateUtils.format(date), '19.11.2017')
+})
 
-  describe('Ostersonntag,', () => {
-    it('2020', () => {
-      // Arrange
-      const year = 2020
-      // Act
-      const date = DateUtils.getEasterSunday(year)
-      // Assert
-      expect(DateUtils.format(date)).toEqual('12.04.2020')
-    })
+test('Ostersonntag, 2020', (t) => {
+  // Arrange
+  const year = 2020
+  // Act
+  const date = DateUtils.getEasterSunday(year)
+  // Assert
+  t.is(DateUtils.format(date), '12.04.2020')
+})
 
-    it('2021', () => {
-      // Arrange
-      const year = 2021
-      // Act
-      const date = DateUtils.getEasterSunday(year)
-      // Assert
-      expect(DateUtils.format(date)).toEqual('04.04.2021')
-    })
-  })
+test('Ostersonntag, 2021', (t) => {
+  // Arrange
+  const year = 2021
+  // Act
+  const date = DateUtils.getEasterSunday(year)
+  // Assert
+  t.is(DateUtils.format(date), '04.04.2021')
+})
 
-  it('2020', () => {
-    // Arrange
-    const date = DateUtils.parse(`02.01.2020`)
-    // Act
-    const res = DateUtils.toEightDigits(date)
-    // Assert
-    expect(res).toEqual('20200102')
-  })
+test('toEightDigits', (t) => {
+  // Arrange
+  const date = DateUtils.parse(`02.01.2020`)
+  // Act
+  const res = DateUtils.toEightDigits(date)
+  // Assert
+  t.is(res, '20200102')
 })
