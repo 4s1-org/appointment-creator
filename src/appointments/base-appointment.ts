@@ -4,8 +4,8 @@ import { CategoryTypeKey } from './category-type'
 import { DateTime } from 'luxon'
 
 export abstract class BaseAppointment {
-  private _begin: DateTime
-  private _end: DateTime
+  private readonly _begin: DateTime
+  private readonly _end: DateTime
   private _additionalKey: string
 
   constructor(
