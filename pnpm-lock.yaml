@@ -5,7 +5,7 @@ specifiers:
   '@4s1/ts-config': 1.4.0
   '@commitlint/cli': 16.2.1
   '@commitlint/config-conventional': 16.2.1
-  '@types/luxon': 2.0.9
+  '@types/luxon': 2.3.0
   '@types/node': 14.18.12
   ava: 4.0.1
   c8: 7.11.0
@@ -25,7 +25,7 @@ devDependencies:
   '@4s1/ts-config': 1.4.0
   '@commitlint/cli': 16.2.1
   '@commitlint/config-conventional': 16.2.1
-  '@types/luxon': 2.0.9
+  '@types/luxon': 2.3.0
   '@types/node': 14.18.12
   ava: 4.0.1
   c8: 7.11.0
@@ -346,8 +346,8 @@ packages:
     resolution: {integrity: sha1-7ihweulOEdK4J7y+UnC86n8+ce4=}
     dev: true
 
-  /@types/luxon/2.0.9:
-    resolution: {integrity: sha512-ZuzIc7aN+i2ZDMWIiSmMdubR9EMMSTdEzF6R+FckP4p6xdnOYKqknTo/k+xXQvciSXlNGIwA4OPU5X7JIFzYdA==}
+  /@types/luxon/2.3.0:
+    resolution: {integrity: sha512-mWXdRlg+5dWvxU+uaijB2RY5NrJtMEXR6j+D6W66hPuezSVXrQqQvWa/JNHntgEYgjzeoVRrQVmMWAbKjUJiFQ==}
     dev: true
 
   /@types/minimist/1.2.2:
