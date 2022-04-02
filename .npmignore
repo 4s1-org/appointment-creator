@@ -3,7 +3,7 @@
 /.editorconfig
 /.vscode/
 /src/
-/.gitlab-ci.yml
+/.github/
 /deploy.sh
 /.eslintrc.yaml
 /tsconfig.json

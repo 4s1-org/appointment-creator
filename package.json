@@ -2,13 +2,13 @@
   "name": "@4s1/appointment-creator",
   "version": "1.1.0",
   "private": true,
-  "description": "appointment creator",
+  "description": "Appointment Creator",
   "bugs": {
-    "url": "https://gitlab.com/4s1/appointment-creator/issues"
+    "url": "https://github.com/4s1-org/appointment-creator/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://gitlab.com/4s1/appointment-creator.git"
+    "url": "https://github.com/4s1-org/appointment-creator.git"
   },
   "license": "MIT",
   "author": "Steffen <steffen@4s1.de>",
